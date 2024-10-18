@@ -1,10 +1,10 @@
 function addingEventListener() {
     const button = document.getElementById('button');
-    button.addEventListener('click', function() {
-        alert('Button was clicked!');
-      });
-  }
-  
-
-  
-  
+    if (button){
+        button.addEventListener('click', function() {
+          console.log('Button clicked!');
+        });
+      } else {
+        console.error('Button element not found');
+      }
+ }
